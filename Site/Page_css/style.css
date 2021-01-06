@@ -1,0 +1,896 @@
+
+
+/************************
+*********Général*********
+************************/
+*{
+      margin: 0px;
+      padding: 0px;
+      font-family: Helvetica, sans-serif;
+}
+
+head{ text-align: left;
+width: 90%;
+margin: auto;
+}
+
+body{
+text-align: left;
+width: 100%;
+margin: auto;
+}
+
+body div{
+  text-align: left;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+
+
+  font-size:20px;
+
+}
+body, html {
+  height: 100%;
+
+    background-image: url('#');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+.gras{
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/************************
+**********Header*********
+************************/
+header{
+  height: 155px;
+  background: #34495e;
+  padding: 0 20px;
+  color: #fff;
+}
+.logo{
+  line-height: 100px;
+  width: 15%;
+  float: left;
+  margin: 5px;
+  display: block;
+}
+
+
+#menu{
+  float: right;
+  line-height: 100px;
+  list-style: none;
+
+}
+#menu li{
+  display: inline;
+}
+
+#menu a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+#menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+  color: #E71D73;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+header .reseaux{
+  display: inline-block;
+
+  padding-top: 100px;
+}
+
+header .contact{
+  position: absolute;
+  right:1%;
+  top:160px;
+  margin-top: 0px;
+  width: 150px;
+  border: 1px solid #34495e;
+  height: auto;
+}
+
+header h3{
+  color: #34495e;
+  padding: 10px;
+}
+
+/************************
+******Couleurs menu******
+************************/
+.formations a:hover{
+    color: #00AF9E;
+    border-bottom: 1px solid #00AF9E;
+}
+.international a:hover{
+    color: #E71D73;
+    border-bottom: 1px solid #E71D73;
+}
+.viealiut a:hover{
+    color: #EB8915;
+    border-bottom: 1px solid #EB8915;
+}
+.entreprise a:hover{
+    color: #D7DB2D;
+    border-bottom: 1px solid #D7DB2D;
+}
+.iut a:hover{
+    color: #A24392;
+    border-bottom: 1px solid #A24392;
+}
+
+/************************
+*****Réseaux sociaux*****
+************************/
+
+.reseaux{
+  z-index: 1;
+  margin: auto;
+  padding:2.5%;
+  height: auto;
+  width: auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reseaux a{
+  display:flex;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 8px;
+}
+
+.reseaux a::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg,#E71D73,#E72DAB);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.reseaux a:hover::before{
+  transform: scale(0);
+}
+
+.reseaux a i{
+  transition: 0.3s ease-in;
+}
+
+.reseaux a:hover i{
+  background: linear-gradient(45deg,#E71D73,#E72DAB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+
+.home{
+  position: fixed;
+  left:20px;
+  top: 550px;
+}
+.home a{
+  color: #E71D73;
+  font-size: 15px;
+}
+/************************
+**********Body **********
+************************/
+body{
+  height: 100%;
+  box-sizing: border-box;
+
+}
+.image{
+
+}
+/* Titre */
+#titre{
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bolder;
+  height: auto;
+  display:block;
+  margin-bottom: 80px;
+}
+#imagetitre{
+  width: 100%;
+
+}
+#imagetitre img{
+  width: 100%;
+
+}
+
+#titre h1{margin-left: 0;
+          font-size: 55px;
+          color: white;
+          width: 100%;
+          text-transform: uppercase;
+          background-color: #34495e}
+
+
+/* Type A: block text <-> image */
+.typeA{
+  width:100%;
+  height:auto;
+  margin-top: 2%;
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: 2%;
+  }
+
+.typeA .textA{
+  width: 35%;
+  margin-left: 10%;
+  float:left;
+  padding: 2.5%;
+  color: black;
+  background-color:#A24392;
+  border-radius: 10px;
+  position: relative;
+  height: auto;
+  margin-bottom: 2%;
+}
+
+
+.typeA .textA a{
+  color: black;
+  text-decoration: underline;
+}
+
+.typeA .imageA{
+  margin-left: -20%;
+  width: 20%;
+  }
+.typeA .imageA img{
+  width: 150%;
+}
+.typeA li{
+  margin-left: 5%;
+}
+
+
+/* Type B: image<-> block text  */
+.typeB{
+    width:100%;
+    height:auto;
+    margin-top: 2%;
+
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+    }
+
+.typeB .imageB{
+  width: 20%;
+  margin-right: 0;
+  margin-left: 10%;
+
+}
+.typeB .imageB img{
+  width: 150%;
+}
+
+.typeB .textB{
+  width: 35%;
+;
+  padding: 2.5%;
+  float:left;
+  color: black;
+  background-color:#D7DB2D;
+  border-radius: 10px;
+  height: auto;}
+
+.typeB .textB a{
+  color: black;
+  text-decoration: underline;
+}
+.typeB li{
+  margin-left: 5%;
+}
+/* Type C: block text <-> block text */
+
+.typeC{
+  width: 100%;
+  height:auto;
+  margin-left: 0%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: inline-flex;
+
+}
+.typeC .textC1{
+  width: 30%;
+  padding: 2.5%;
+  float:left;
+  color: black;
+  background-color:#EB8915;
+  border-radius: 10px;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 0%;
+}
+
+.typeC .textC2{
+  width: 30%;
+  padding: 2.5%;
+  color: black;
+  background-color:#00AF9E;
+  border-radius: 10px;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 0%;
+}
+.typeC li{
+  margin-left: 5%;
+}
+
+/* Type D: block text */
+.typeD{
+  width: 100%;
+  height:auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  text-align: center;
+
+}
+.typeD .textD{
+  width: 70%;
+  margin-left: 10%;
+  float:left;
+  padding: 2.5%;
+  color: black;
+  background-color :rgba(255,13,204,0.6);
+  border-radius: 10px;
+  position: relative;
+  height: auto;
+  margin-bottom: 2%;
+
+}
+.typeD li{
+  margin-left: 5%;
+}
+.typeA a, .typeB a, .typeC a, .typeD a{
+  color: black;
+  text-decoration: none;
+}
+.typeA a:hover, .typeB a:hover, .typeC a:hover, .typeD a:hover{
+  text-decoration: underline;
+}
+
+/* Commun boîtes types A,B,C et D */
+h3{
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+/************************
+**********Footer*********
+************************/
+footer{
+  overflow: hidden;
+  height: auto;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  background: #fff;
+  color: white;
+
+}
+
+.footer{
+  margin-top: 5px;
+  margin-bottom: 0;
+  width: 100%;
+  height: auto;
+  background: #3C3739;
+  background-size: contain;
+  display:block;
+
+}
+.rappelmenu{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+  height: auto;
+  border-bottom: 1px solid white;
+}
+.footermenu{
+  width:20%;
+  height: auto;
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+
+/* Contact */
+.contact{
+  margin-top: 20px;
+  width: 330px;
+  border: 1px solid white;
+  height: auto;
+  font-size: 10px;
+}
+ .contact h4{
+   font-size: 14px;
+   text-decoration: underline;
+ }
+ .listnom{
+   list-style-type: none;
+ }
+ .contactlist {
+   list-style-type:square;
+   margin-left: 15px;
+   font-size: 15px;
+ }
+footer h3{
+  text-decoration: none;
+  color: white;
+  outline: none;
+  transition: 0.3s;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+
+}
+footer a{
+  text-decoration: none;
+  color: white;
+  outline: none;
+  transition: 0.3s
+
+}
+.footermenu ul{
+  list-style: none;
+  letter-spacing: 0.5px;
+}
+.footermenu ul li{
+  margin: 10px 0;
+  height: 25px;
+  padding-top: 5px;
+  color: white;
+  font-size: 15px;
+
+}
+.contact h3,li{
+  padding: 10px;
+}
+
+
+/***********************
+ ****Homepage -> Body***
+ **********************/
+.Homepage{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.quote{
+
+  margin-top: 0%;
+  width: 10px;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+  align-items: center;
+}
+.quote a{
+  text-decoration: none;
+  color: black;
+}
+.quote ul{
+  margin-left: 4%;
+  font-size: 25px;
+  margin-top: 20px;
+  text-align: left;
+}
+.quote li{
+  margin-top: 10px;
+}
+.quote .box{
+  position: fixed;
+  width: 360px;
+  height: 500px;
+  background: #fff;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 1;
+  box-sizing:border-box;
+  padding: 30px;
+  box-shadow: -10px 25px 50px rgba(0,0,0,.2);
+}
+.quote .box:hover{
+  box-shadow: -10px 25px 50px rgba(0,0,0,.5);
+}
+.quote .bg{
+  position: absolute;
+  top: 15%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: 1s;
+  pointer-events: none;
+  width: 100%;
+  height:100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.quote .box1{
+  top: 30%;
+  left: 25%;
+  z-index: 2;
+
+}
+.quote .box2{
+  top: 30%;
+  left: 55%;
+  z-index: 2;
+}
+
+
+.quote .box.box1:hover,
+.quote .box.box2:hover{
+  opacity: 1;
+  background: linear-gradient(#fff,#ccc);
+}
+/************************
+ *Homepage -> responsive*
+ ***********************/
+ @media screen and (min-width:950px) {
+   .quote .box.box1:hover ~ .bg{
+     opacity: 1;
+     background-image: url("../../Image/Homepage/Image1.jpg");
+     z-index: 1
+
+
+   }
+   .quote .box.box2:hover ~ .bg{
+     opacity: 1;
+     background-image: url("../../Image/Homepage/Image2.jpg");
+
+   }
+ }
+
+/************************
+****Responsive design****
+************************/
+
+@media screen and (min-width:800px) {
+  header .reseaux{
+    position: fixed;
+    left:-2%;
+    top: 80px;
+  }
+}
+/************************
+*****Cohérence menu******
+************************/
+@media screen and (max-width:1400px) {
+  header{
+    height: auto;
+  }
+  body{
+    height:auto;
+  }
+  .footermenu{
+    width:30%;
+    height: auto;
+    margin-top: 40px;
+  }
+  header{
+    height: 155px;
+    background: #34495e;
+    padding: 0 20px;
+    color: #fff;
+  }
+  .logo{
+    line-height: 100px;
+    width: 15%;
+    float: left;
+    margin: 5px;
+    display: block;
+  }
+
+
+  #menu{
+    float: right;
+    line-height: 100px;
+    list-style: none;
+
+  }
+  #menu li{
+    display: inline;
+  }
+
+  #menu a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+  }
+  .show-menu-btn,.hide-menu-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  .show-menu-btn{
+    float: right;
+  }
+  .show-menu-btn i{
+    line-height: 100px;
+  }
+  #menu a:hover,
+  .show-menu-btn:hover,
+  .hide-menu-btn:hover{
+    color: #E71D73;
+  }
+
+  #chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+  }
+
+  header .reseaux{
+    display: inline-block;
+    float: right;
+    padding-top: 100px;
+  }
+  .textA,.textB,.textC1,.textC2, .textD{
+    font-size:16px;
+  }
+
+}
+/************************
+*********Tablette********
+************************/
+@media screen and (max-width:1200px) {
+  .footermenu{
+    width:50%;
+  }
+  .rappelmenu{width: 100%}
+
+  .typeA .textA{
+    align-items: center;
+  }
+  .quote .box1{
+    top: 30%;
+    left: 10%;
+
+  }
+  .quote .box2{
+    top: 30%;
+    left: 55%;
+  }
+  .home{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  #menu{
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  #menu a{
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ #menu{
+    right: 0;
+  }
+  header .reseaux{
+    display: flex;
+    margin-top: -90px;
+  }
+  body .reseaux_body{
+    position: fixed;
+    left:-100%;
+  }
+  .footermenu{
+    width:100%;
+  }
+  #titre{
+    margin-top: 100px;
+    width: 100%;
+  }
+  header .contact{
+    margin-top: 0;
+  }
+  #titre{
+    margin-top: 150px;
+  }
+  .typeA{
+
+    width: 100%;
+    text-align: center;
+  }
+
+  .typeA .textA{
+    margin-left: 15px;
+    width: 90%;
+    display: block;
+    font-size: 15px;
+  }
+  .typeA .imageA{
+    display: none
+  }
+  .typeB{
+    margin-left: 15px;
+    width: 95.5%;
+    text-align: center;
+  }
+  .typeB .textB{
+    width: 100%;
+    display: block;
+    font-size: 15px;
+  }
+  .typeB .imageB{
+    display: none
+  }
+  .typeC{
+    margin-left: -25px;
+    width: 100%;
+    text-align: center;
+    display:inline-grid;
+  }
+  .typeC .textC1{
+    margin-left: 40px;
+    width: 90%;
+    display: block;
+    margin-bottom: 25px;
+    font-size: 15px;
+  }
+  .typeC .textC2{
+    margin-left: 40px;
+    width: 90%;
+    display: block;
+    font-size: 15px;
+  }
+  .typeD{
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+    display:inline-grid;
+  }
+  .typeD .textD{
+    margin-left: 15px;
+    width: 90%;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .Homepage{
+    height:1300px;
+  }
+  .quote .box1{
+    position: absolute;
+    top: 32%;
+    left: 25%;
+
+  }
+  .quote .box2{
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    margin-bottom: 700px;
+  }
+
+
+}
+/************************
+********Telephone********
+************************/
+@media screen and (max-width:583px) {
+  header .reseaux{
+    position: absolute;
+    left:-3%;
+    top: 140px;
+  }
+  header .contact{
+      margin-top: 100px;
+      margin-right: 30%;
+  }
+
+  footer .contact{
+    margin-left: -20%;
+  }
+
+  #titre{
+    margin-left: -20px;
+    width: 110%;
+    margin-top: 250px;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .Homepage{
+    height:1400px;
+  }
+  .quote .box1{
+    position: absolute;
+    top: 45%;
+    left: 15%;
+
+  }
+  .quote .box2{
+    position: absolute;
+    top: 110%;
+    left: 15%;
+    margin-bottom: 700px;
+  }
+  .home{
+    display: none;
+  }
+
+}

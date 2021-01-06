@@ -1,0 +1,373 @@
+/* Général */
+*{
+      margin: 0px;
+      padding: 0px;
+      font-family: Helvetica, sans-serif;
+}
+
+head{ text-align: left;
+width: 90%;
+margin: auto;
+}
+
+body{
+text-align: left;
+width: 100%;
+margin: auto;
+}
+
+body div{
+  text-align: left;
+  width: 60%;
+  margin: auto;
+  height:300px;
+
+  font-size:20px;
+
+}
+body, html {
+  height: 100%;
+
+    background-image: url('#');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+
+/* Header */
+/* Entête*/
+
+#entete{width: 100%;}
+
+header{text-align: top;width: 100%;height: auto;}
+header .reseaux{float: left; display: flex;}
+/* Logo */
+#logo{background-image: url("Aide/Logo_IUT_Lens.svg");
+background-repeat: no-repeat;
+  float:left;
+margin: 2%;
+margin-right: 5%;
+width:10%;
+}
+
+/* Menu */
+
+header nav{
+      width: 70%;
+      margin: 0 auto;
+      background-color: white);
+      position: left;
+      top: 0px;
+      float: left;
+      display: inline-block;
+    }
+
+
+header nav ul{
+      list-style-type: none;
+
+  }
+
+header nav ul li{
+    float: left;
+    width: 15%;
+    text-align: left;
+    position:relative;
+    font-size: 100%;
+}
+
+header nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+header nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: 1000;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant{margin-left: 3%}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 80%;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 200px;
+}
+
+ /* Couleurs menu déroulant */
+.formations a:hover{
+    color: #00AF9E;
+    border-bottom: 2px solid #00AF9E;
+}
+.international a:hover{
+    color: #E71D73;
+    border-bottom: 2px solid #E71D73;
+}
+.viealiut a:hover{
+    color: #EB8915;
+    border-bottom: 2px solid #EB8915;
+}
+.entreprise a:hover{
+    color: #D7DB2D;
+    border-bottom: 2px solid #D7DB2D;
+}
+.iut a:hover{
+    color: #A24392;
+    border-bottom: 2px solid #A24392;
+}
+
+/* Fin header */
+
+
+/* Body */
+
+/* Titre */
+#titre{
+
+      width: 100%;
+      text-align: left;
+      font-weight: bolder;
+      background-image: url('https://s2.best-wallpaper.net/wallpaper/1920x1080/1301/Japan-Kyoto-Daigo-autumn-landscape_1920x1080.jpg');
+      height: 50%;
+      width: 90%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: round;
+      background-size: cover;}
+#titre h1{margin-left: 25%;
+          color: #E71D73;
+          background-size: auto;
+          background-color: rgb(0,0,0,0.6)}
+/* Espace */
+.espace{height:5%}
+
+
+/* Type A: block text <-> image */
+#typeA{width:80%;
+        height:auto;
+        margin-top: 5%;
+        margin-left: 15%;
+        display: block;}
+
+#typeA .textA{width: 50%;
+              margin-left: 5%;
+              float:left;
+              padding: 2.5%;
+              color: black;
+              background-color:#A24392;
+              border-radius: 10px;
+              position: relative;
+              height: auto;}
+
+
+#typeA .textA a{color: black;
+                text-decoration: underline;}
+
+#typeA .imageA{
+
+  float: left;
+  background-image: url('https://s2.best-wallpaper.net/wallpaper/1920x1080/1301/Japan-Kyoto-Daigo-autumn-landscape_1920x1080.jpg');
+  width: 25%;
+  margin-left: 2.5%;
+  position: relative;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;}
+
+
+/* Type B: image<-> block text  */
+#typeB{width:80%;
+  position: relative;
+  display: block;
+  }
+
+  #typeB .imageB{
+    margin-top: 5%;
+    margin-left: 10%;
+    float: left;
+    background-image: url('https://s2.best-wallpaper.net/wallpaper/1920x1080/1301/Japan-Kyoto-Daigo-autumn-landscape_1920x1080.jpg');
+    width: 25%;
+    margin-right: 2.5%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;}
+
+#typeB .textB{width: 50%;
+              margin-top: 5%;
+              padding: 2.5%;
+              float:left;
+              color: black;
+              background-color:#A24392;
+              border-radius: 10px;
+              height: auto;}
+
+#typeB .textB a{color: black;
+                text-decoration: underline;}
+
+
+
+
+/* Type C: block text <-> block text  */
+#typeC{width:80%;
+  height:auto;
+  display: flex;
+  margin-top: 5%;
+  position: relative;
+  }
+#typeC .textC.1{width: 30%;
+               margin-top: 5%;
+               margin-left: 0%;
+               float:left;
+               padding: 1%;
+               color: black;
+               background-color:#A24392;
+               border-radius: 10px;
+               position: relative;
+               display: block;}
+
+
+#typeC .textC.2{width: 10px;
+               margin-top: 5%;
+               margin-right: 0%;
+               float:right;
+               padding: 1%;
+               color: black;
+               background-color:#A24392;
+               border-radius: 10px;
+               display: block;}
+
+/* Footer */
+
+/*CV*/
+footer .CV{height: auto;background-color:rgb(231, 29, 115,0.8); opacity: 1;width: 100%; display: inline-block;margin-left: auto;margin-right: auto;}
+footer .CV .avatar1{background-image: url("Image/avatar1.png"); max-width: 26%; padding: 3%;background-repeat:no-repeat;background-position: center;;float: left; opacity: 1;}
+footer .CV .avatar2{background-image: url("Image/avatar2.png");float: left; max-width: 26%; padding: 3%;background-repeat:no-repeat;background-position: center ;opacity: 1;}
+footer .CV .avatar3{background-image: url("Image/avatar3.png");float: left; max-width: 26%; padding: 3%;background-repeat:no-repeat;background-position: center ;opacity: 1;}
+
+/*Rappel menu*/
+
+footer .bas{background-color: black; width: 100%; opacity: 0.6; border-top: black; height: auto;font-size: 120%}
+footer .bas a{color: white; text-decoration: none;}
+footer .bas .footermenu{list-style: none;display: flex;padding: 1%; margin-left: auto; margin-right: auto;position: relative;text-align: left;}
+footer .bas ul li ul{list-style: none; margin-left: 10%; width:100%}
+footer .bas ul{display: inline-block;width: 80%}
+
+/*Réseaux sociaux*/
+
+.reseaux{
+  margin: 0;
+  padding: 2.5%;
+  height: auto;
+  display: inline-block;
+  justify-content: center;
+  align-items: right;
+}
+
+.reseaux a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+}
+
+.reseaux a::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg,#E71D73,#E72DAB);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.reseaux a:hover::before{
+  transform: scale(0);
+}
+
+.reseaux a i{
+  transition: 0.3s ease-in;
+}
+
+.reseaux a:hover i{
+  background: linear-gradient(45deg,#E71D73,#E72DAB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+
+
+
+
+
+
+.design{text-align: left;
+padding: 10px;
+}
+
+
+
+/* parallax */
+.parallax {
+  /* image */
+  background-image: url('https://cdn.pixabay.com/photo/2016/11/19/21/29/temple-1841296_960_720.jpg');
+  height: 100%;
+  width: 100%;
+
+  /* Effet scrolling parallax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: round;
+  background-size: cover;
+}
+
+}
+
+h2,h3{text-align: center;padding-bottom: 2%}
+h3{text-decoration: underline;}
+
+.gras{font-weight: bolder;}
